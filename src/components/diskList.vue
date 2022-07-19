@@ -1,7 +1,8 @@
 <template>
   <div class="container">
-    <div class="row d-flex flex-wrap">
-      <diskCard
+    <Loader v-if="disks.length != 10" />
+    <div class="row d-flex flex-wrap" v-show="disks.length <= 10">
+      <diskCard 
         class="col-2"
         v-for="(disk, index) in disks"
         :key="index"
@@ -14,6 +15,7 @@
 <script>
 import axios from "axios";
 import diskCard from "./diskCard.vue";
+import Loader from "./Loader.vue";
 
 export default {
   data: function () {
@@ -23,6 +25,7 @@ export default {
   },
   components: {
     diskCard,
+    Loader
   },
   methods: {
     getDisk() {
