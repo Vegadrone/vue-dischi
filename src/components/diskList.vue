@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row d-flex flex-wrap">
       <diskCard
-        class="col"
+        class="col-2"
         v-for="(disk, index) in disks"
         :key="index"
         :disk="disk"
@@ -46,7 +46,5 @@ export default {
 
 <style lang="scss">
 @import "../assets/styles/variables.scss";
-diskCard{
-  width: calc(100% / 5);
-}
+
 </style>
