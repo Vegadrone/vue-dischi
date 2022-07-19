@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <header>
     <h1>HEADER</h1>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -10,6 +10,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/styles/variables.scss";
+    header{
+        background-color: $headerBgColor ;
+    }
 
 </style>

@@ -1,20 +1,25 @@
 <template>
-  <div>
+  <main>
     <h1>MAIN</h1>
-    <diskCard />
-  </div>
+    <diskList/>
+  </main>
 </template>
 
-<script>
-import diskCard from "./diskCard.vue";
+<script> 
+import diskList from "./diskList.vue";
 
 export default {
  components: {
-    diskCard,
+    diskList,
   },
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/styles/variables.scss";
+main{
+    background-color: $bgColor;
+}
+
 
 </style>
