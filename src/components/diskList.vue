@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Loader v-if="disks.length != 10" />
-    <div class="row d-flex flex-wrap" v-show="disks.length <= 10">
+    <div class="row justify-content-between" v-show="disks.length <= 10">
       <diskCard 
         class="col-2"
         v-for="(disk, index) in disks"
@@ -49,5 +49,7 @@ export default {
 
 <style lang="scss">
 @import "../assets/styles/variables.scss";
-
+  diskCard{
+    margin: 0 auto;
+  }
 </style>

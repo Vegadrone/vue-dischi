@@ -1,6 +1,8 @@
 <template>
-  <div class="loader d-flex justify-content-center align-items-center">
-    <h1 class="loader-text fw-bold text-light">LOADER</h1>
+  <div class="d-flex justify-content-center">
+    <div class="loader d-flex justify-content-center align-items-center">
+    <h1 class="loader-text fw-bold text-light text-uppercase">loading</h1>
+  </div>
   </div>
 </template>
 
@@ -13,7 +15,7 @@ export default {
 <style lang="scss">
 @import "../assets/styles/variables.scss";
     .loader{
-        width: 50rem;
+        width: 100rem;
         height: 50rem;
         background-color: $cardBgColor;
     }
