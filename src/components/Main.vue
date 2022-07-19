@@ -1,6 +1,5 @@
 <template>
   <main>
-    <h1>MAIN</h1>
     <diskList/>
   </main>
 </template>
@@ -20,6 +19,4 @@ export default {
 main{
     background-color: $bgColor;
 }
-
-
 </style>
