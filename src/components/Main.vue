@@ -17,7 +17,7 @@ export default {
 <style lang="scss">
 @import "../assets/styles/variables.scss";
 main{
-    background-color: $bgColor;
-    padding:4rem
+   
+    padding:4.23rem
 }
 </style>

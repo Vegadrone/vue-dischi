@@ -20,4 +20,8 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap.scss";
+@import "./assets/styles/variables.scss";
+#app{
+   background-color: $bgColor;
+}
 </style>

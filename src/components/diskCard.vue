@@ -21,7 +21,7 @@ export default {
 @import "../assets/styles/variables.scss";
 .card-wrapper {
   background-color: $cardBgColor;
-  height: 25rem;
+  height: 21rem;
   padding: 2rem;
   border-radius: 5px;
   margin: 1rem 1rem;
