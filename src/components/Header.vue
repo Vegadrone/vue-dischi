@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="" alt="spotify-logo">
+    <img src="../assets/img/spotify-logo.png" alt="spotify-logo">
   </header>
 </template>
 
@@ -14,7 +14,12 @@ export default {
 @import "../assets/styles/variables.scss";
     header{
         background-color: $headerBgColor ;
-        padding: 2rem 0rem;
+
+        img{
+          height: 5.5rem;
+          padding: 0.8rem;
+          margin-left: 1rem;
+        }
     }
 
 </style>
