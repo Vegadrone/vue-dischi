@@ -1,12 +1,17 @@
 <template>
   <div>
     <h1>MAIN</h1>
+    <diskCard />
   </div>
 </template>
 
 <script>
-export default {
+import diskCard from "./diskCard.vue";
 
+export default {
+ components: {
+    diskCard,
+  },
 }
 </script>
 
