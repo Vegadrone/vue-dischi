@@ -1,5 +1,10 @@
 <template>
   <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <selectGenre />
+      </div>
+    </div>
     <Loader v-if="disks.length != 10" />
     <div class="row justify-content-between" v-show="disks.length <= 10">
       <diskCard 
@@ -16,6 +21,7 @@
 import axios from "axios";
 import diskCard from "./diskCard.vue";
 import Loader from "./Loader.vue";
+import selectGenre from "./selectGenre.vue";
 
 export default {
   data: function () {
@@ -25,7 +31,8 @@ export default {
   },
   components: {
     diskCard,
-    Loader
+    Loader,
+    selectGenre
   },
   methods: {
     getDisk() {

@@ -17,7 +17,6 @@ export default {
 <style lang="scss">
 @import "../assets/styles/variables.scss";
 main{
-   
     padding:4.23rem
 }
 </style>

@@ -5,7 +5,7 @@
     </div>
     <div class="card-text text-center">
       <h5 class="title text-light fw-bold mt-3 text-uppercase">{{ disk.title }}</h5>
-      <span class="artist fw-bold ">{{ disk.author }}</span>
+      <span class="artist fw-bold">{{ disk.author }}</span>
       <span class="year d-block">{{ disk.year }}</span>
     </div>
   </div>
