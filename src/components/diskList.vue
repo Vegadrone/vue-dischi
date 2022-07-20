@@ -42,7 +42,9 @@ export default {
         .then((result) => {
           this.disks = result.data.response;
           this.disks.forEach((element) => {
-            this.genres.push(element.genre);
+            if(!this.genres.includes(element.genre)){
+              this.genres.push(element.genre);
+            }
           });
           console.log(this.disks);
           console.log(this.genres);
