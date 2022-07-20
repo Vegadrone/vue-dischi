@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-4">
+      <div class="col-2 mb-3">
         <selectGenre :genres="genres" />
       </div>
     </div>
