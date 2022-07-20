@@ -1,8 +1,9 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-2 mb-3">
-        <selectGenre :genres="genres" />
+      <div class="col-2 mb-3
+      ">
+        <selectGenre :genres="genres" @select="genreSelection" />
       </div>
     </div>
     <Loader v-if="disks.length != 10" />
@@ -53,6 +54,10 @@ export default {
           console.warn(error);
         });
     },
+
+    genreSelection(needle){
+      console.log(needle)
+    }
   },
 
   created() {
