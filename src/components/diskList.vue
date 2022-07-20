@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-4">
-        <selectGenre />
+        <selectGenre :genres="genres" />
       </div>
     </div>
     <Loader v-if="disks.length != 10" />
